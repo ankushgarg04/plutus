@@ -4,6 +4,7 @@ import time
 import pandas as pd
 import os
 
+# Gets data only upto 27-01-2025 since we don't have minute price series data before that(tested with test_dates.py)
 def get_last_year_timestamps():
     today = datetime.date.today()
     one_year_ago = today - datetime.timedelta(days=365)
